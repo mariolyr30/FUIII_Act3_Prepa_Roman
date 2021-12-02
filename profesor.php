@@ -21,11 +21,11 @@ if (isset($_POST['profesor'])) {
 	    $apellidos = trim($_POST['apellido']);
 		$telefono = trim($_POST['ciudad']);
 		$domicilio = trim($_POST['correo']);
-		$fecha_de_nacimiento = trim($_POST['nombre']);
+		$fecha_de_nacimiento = trim($_POST['fecha de nacimiento']);
 	    $sexo = trim($_POST['apellido']);
 		$materia = trim($_POST['ciudad']);
 		$email = trim($_POST['correo']);
-		$grupos = trim($_POST['nombre']);
+		$grupos = trim($_POST['grupos']);
 	    $salon = trim($_POST['apellido']);
 		$turno = trim($_POST['turno']);
 
