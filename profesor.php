@@ -17,19 +17,19 @@ if (isset($_POST['profesor'])) {
 	strlen($_POST['Turno']) >= 1) {
 
 	    $DNIprofesor = trim($_POST['DNI']);
-	    $Nombre = trim($_POST['nombre(s)']);
-	    $Apellidos = trim($_POST['apellidos']);
-		$Telefono = trim($_POST['telefono']);
-		$Domicilio = trim($_POST['domicilio']);
-		$Fecha_de_nacimiento = trim($_POST['fecha_de_nacimiento']);
-	    $Sexo = trim($_POST['sexo']);
-		$Materia = trim($_POST['materia']);
-		$Email = trim($_POST['email']);
-		$Grupos = trim($_POST['grupos']);
-	    $Salon = trim($_POST['salon']);
-		$Turno = trim($_POST['turno']);
+	    $Nombre = trim($_POST['Nombre(s)']);
+	    $Apellidos = trim($_POST['Apellidos']);
+		$Telefono = trim($_POST['Telefono']);
+		$Domicilio = trim($_POST['Domicilio']);
+		$Fecha_de_nacimiento = trim($_POST['Fecha_de_nacimiento']);
+	    $Sexo = trim($_POST['Sexo']);
+		$Materia = trim($_POST['Materia']);
+		$Email = trim($_POST['Email']);
+		$Grupos = trim($_POST['Grupos']);
+	    $Salon = trim($_POST['Salon']);
+		$Turno = trim($_POST['Turno']);
 
-	    $consulta = "INSERT INTO profesor (dniprofesor, nombre(s), apellidos, telefono, domicilio, fecha_de_nacimiento, sexo, materia, email grupos, salon, turno) 
+	    $consulta = "INSERT INTO profesor (DNIprofesor, Nombre(s), Apellidos, Telefono, Domicilio, Fecha_de_nacimiento, Sexo, Materia, Email, Grupos, Salon, Turno) 
 		VALUES ('$DNIprofesor','$Nombre','$Apellidos','$Telefono','$Domicilio','$Fecha_de_nacimiento','$Sexo','$Materia','$Email','$Grupos','$Salon','$Turno)";
 
 	    $resultado = mysqli_query($conex,$consulta);
