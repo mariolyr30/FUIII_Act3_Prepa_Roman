@@ -21,7 +21,7 @@ if (isset($_POST['profesor'])) {
 	    $Apellidos = trim($_POST['Apellidos']);
 		$Telefono = trim($_POST['Telefono']);
 		$Domicilio = trim($_POST['Domicilio']);
-		$Fecha_de_nacimiento = trim($_POST['Fecha_de_nacimiento']);
+		$Fecha_de_nacimiento = trim($_POST['Fecha de nacimiento']);
 	    $Sexo = trim($_POST['Sexo']);
 		$Materia = trim($_POST['Materia']);
 		$Email = trim($_POST['Email']);
@@ -29,7 +29,7 @@ if (isset($_POST['profesor'])) {
 	    $Salon = trim($_POST['Salon']);
 		$Turno = trim($_POST['Turno']);
 
-	    $consulta = "INSERT INTO profesor (DNIprofesor, Nombre(s), Apellidos, Telefono, Domicilio, Fecha_de_nacimiento, Sexo, Materia, Email, Grupos, Salon, Turno) 
+	    $consulta = "INSERT INTO profesor (DNI, Nombre(s), Apellidos, Telefono, Domicilio, Fecha de nacimiento, Sexo, Materia, Email, Grupos, Salon, Turno) 
 		VALUES ('$DNIprofesor','$Nombre','$Apellidos','$Telefono','$Domicilio','$Fecha_de_nacimiento','$Sexo','$Materia','$Email','$Grupos','$Salon','$Turno)";
 
 	    $resultado = mysqli_query($conex,$consulta);
